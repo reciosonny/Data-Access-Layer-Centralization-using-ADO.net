@@ -1,17 +1,17 @@
 Data Access Layer Centralization using ADO.net
 ==============================================
 
-Centralizing Data Access of ADO.net
+<b><i>Centralizing Data Access of ADO.net</i></b>
 
-Author: Sonny R. Recio
+<b>Author:</b> Sonny R. Recio
 
-Description: This API simplifies the process of using ADO.net in a more organized way, allowing developers to create a Data-driven applications more rapidly than ever before.
+<b>Description:</b> This API simplifies the process of using ADO.net in a more organized way, allowing developers to create a Data-driven applications more rapidly than ever before.
 
 
 Updates and features:
 =====================
 
-Version 1.0
+<b>Version 1.0</b>
 
 * Support for multiple providers(MS Access, SQL Server, ODBC Connections)
 * Support for Stored Procedures
