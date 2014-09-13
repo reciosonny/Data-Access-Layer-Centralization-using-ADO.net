@@ -3,7 +3,7 @@ Data Access Layer Centralization using ADO.net
 
 <b><i>Centralizing Data Access of ADO.net</i></b>
 
-<b>Author:</b> Sonny R. Recio
+<b>Author / Creator:</b> Sonny R. Recio
 
 <b>Description:</b> This API simplifies the process of using ADO.net in a more organized way, allowing developers to create a Data-driven applications more rapidly than ever before.
 
