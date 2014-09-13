@@ -1,0 +1,13 @@
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\demoCsharp\bin\Debug\test.exe.config
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\demoCsharp\obj\Debug\test.exe
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\demoCsharp\obj\Debug\test.pdb
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\bin\Debug\test.exe.config
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\obj\Debug\test.exe
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\obj\Debug\test.pdb
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\bin\Debug\person.accdb
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\bin\Debug\test.exe
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\bin\Debug\test.pdb
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\bin\Debug\DataAccessCentralization.dll
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\obj\Debug\demoApiCsharp.csprojResolveAssemblyReference.cache
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\obj\Debug\test.Form1.resources
+D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSampleCodes\demoCsharp\obj\Debug\demoApiCsharp.csproj.GenerateResource.Cache
