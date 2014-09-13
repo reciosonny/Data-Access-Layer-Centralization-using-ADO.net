@@ -7,9 +7,11 @@ Author: Sonny R. Recio
 
 Description: This API simplifies the process of using ADO.net in a more organized way, allowing developers to create a Data-driven applications more rapidly than ever before.
 
+
 Updates and features:
 
 Version 1.0
+
 •	Support for multiple providers(MS Access, SQL Server, ODBC Connections)
 
 •	Support for Stored Procedures
