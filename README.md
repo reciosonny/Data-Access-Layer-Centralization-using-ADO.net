@@ -27,7 +27,7 @@ Getting Started
 
 <b>Import API to your project</b>
 * Add <b>DataAccessCentralization.dll</b> to your reference project
-* Refer to sample code snippets and instruction manual for more details
+* Refer to sample code snippets and instruction manual for more details. Visit my blog as well: http://bit.ly/1sGCo2r
 
 <b>Sample codes</b>
 
