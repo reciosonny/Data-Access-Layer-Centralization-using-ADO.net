@@ -8,7 +8,7 @@ Data Access Layer Centralization using ADO.net
 <b>Description:</b> This API simplifies the process of using ADO.net in a more organized way, allowing developers to create a Data-driven applications more rapidly than ever before.
 
 
-Updates and features:
+Updates and features
 =====================
 
 <b>Version 1.0</b>
@@ -22,10 +22,17 @@ Updates and features:
 *	Auto-execute commands for CRUD(Create, read, update, delete) operations
 *	Support for Scalar commands that returns single value
 
-Sample codes:
-=============
+Getting Started
+===============
+
+<b>Import API to your project</b>
+* Add <b>DataAccessCentralization.dll</b> to your reference project
+* Refer to sample code snippets and instruction manual for more details
+
+<b>Sample codes</b>
 
 I've added sample codes for VB.net and C#.net to get you started. Samples are the best way to demonstrate its use. Kindly download the files and start trying.
+
 
 Problems? Bugs? Send me an email
 ================================
