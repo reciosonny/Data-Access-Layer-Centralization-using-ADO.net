@@ -21,3 +21,13 @@ Version 1.0
 *	Automatically processed parameters for SQL Commands
 *	Auto-execute commands for CRUD(Create, read, update, delete) operations
 *	Support for Scalar commands that returns single value
+
+Sample codes:
+=============
+
+I've added sample codes for VB.net and C#.net to get you started. Samples are the best way to demonstrate its use. Kindly download the files and start trying.
+
+Problems? Bugs? Send me an email
+================================
+
+Just email me at reciosonny@gmail.com and report the bug.
