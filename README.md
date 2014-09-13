@@ -9,21 +9,15 @@ Description: This API simplifies the process of using ADO.net in a more organize
 
 
 Updates and features:
+=====================
 
 Version 1.0
 
-•	Support for multiple providers(MS Access, SQL Server, ODBC Connections)
-
-•	Support for Stored Procedures
-
-•	Automatically handled Connections and garbage collections
-
-•	Added support for DataSet as data retrieval
-
-•	Added support for DataTable as data retrieval
-
-•	Automatically processed parameters for SQL Commands
-
-•	Auto-execute commands for CRUD(Create, read, update, delete) operations
-
-•	Support for Scalar commands that returns single value
+* Support for multiple providers(MS Access, SQL Server, ODBC Connections)
+* Support for Stored Procedures
+* Automatically handled Connections and garbage collections
+*	Added support for DataSet as data retrieval
+*	Added support for DataTable as data retrieval
+*	Automatically processed parameters for SQL Commands
+*	Auto-execute commands for CRUD(Create, read, update, delete) operations
+*	Support for Scalar commands that returns single value
