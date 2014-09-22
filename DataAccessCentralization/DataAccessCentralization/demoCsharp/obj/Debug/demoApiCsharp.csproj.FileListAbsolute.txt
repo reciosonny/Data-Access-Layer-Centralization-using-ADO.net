@@ -1,0 +1,3 @@
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\demoCsharp\bin\Debug\test.exe.config
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\demoCsharp\obj\Debug\test.exe
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\demoCsharp\obj\Debug\test.pdb

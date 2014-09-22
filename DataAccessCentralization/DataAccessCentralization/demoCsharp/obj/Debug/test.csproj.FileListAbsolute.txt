@@ -1,0 +1,22 @@
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\bin\Debug\test.exe.config
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\bin\Debug\person.accdb
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\bin\Debug\test.exe
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\bin\Debug\test.pdb
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\bin\Debug\DataAccessCentralization.dll
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\bin\Debug\DataAccessCentralization.pdb
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\obj\Debug\test.exe
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\obj\Debug\test.pdb
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\obj\Debug\test.Form1.resources
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\test\obj\Debug\test.csproj.GenerateResource.Cache
+I:\DataAccessCentralization\test\bin\Debug\test.exe.config
+I:\DataAccessCentralization\test\obj\Debug\test.exe
+I:\DataAccessCentralization\test\obj\Debug\test.pdb
+I:\DataAccessCentralization\test\bin\Debug\person.accdb
+I:\DataAccessCentralization\test\bin\Debug\test.exe
+I:\DataAccessCentralization\test\bin\Debug\test.pdb
+I:\DataAccessCentralization\test\bin\Debug\DataAccessCentralization.dll
+I:\DataAccessCentralization\test\bin\Debug\DataAccessCentralization.pdb
+I:\DataAccessCentralization\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+I:\DataAccessCentralization\test\obj\Debug\test.Form1.resources
+I:\DataAccessCentralization\test\obj\Debug\test.csproj.GenerateResource.Cache

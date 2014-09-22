@@ -1,0 +1,18 @@
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.dll
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.pdb
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.csprojResolveAssemblyReference.cache
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.dll
+c:\users\recio_000\documents\visual studio 2013\Projects\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.pdb
+I:\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.dll
+I:\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.pdb
+I:\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.dll
+I:\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.pdb
+C:\Users\recio_000\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.dll
+C:\Users\recio_000\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.pdb
+C:\Users\recio_000\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.dll
+C:\Users\recio_000\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.pdb
+C:\Users\recio_000\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.csprojResolveAssemblyReference.cache
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.dll
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.pdb
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.dll
+C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.pdb
