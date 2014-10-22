@@ -24,25 +24,26 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.txtUpdateFname = New System.Windows.Forms.TextBox()
-        Me.txtUpdateMname = New System.Windows.Forms.TextBox()
-        Me.txtUpdateLname = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtUpdateId = New System.Windows.Forms.TextBox()
-        Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.txtUpdateId = New System.Windows.Forms.TextBox()
+        Me.txtUpdateLname = New System.Windows.Forms.TextBox()
+        Me.txtUpdateMname = New System.Windows.Forms.TextBox()
+        Me.txtUpdateFname = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.btnAdd = New System.Windows.Forms.Button()
-        Me.txtAddFname = New System.Windows.Forms.TextBox()
-        Me.txtAddMname = New System.Windows.Forms.TextBox()
-        Me.txtAddLname = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtAddLname = New System.Windows.Forms.TextBox()
+        Me.txtAddMname = New System.Windows.Forms.TextBox()
+        Me.txtAddFname = New System.Windows.Forms.TextBox()
+        Me.btnAdd = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -80,70 +81,14 @@ Partial Class Form1
         Me.TabPage2.Text = "Update/Delete Person"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'txtUpdateFname
+        'btnDelete
         '
-        Me.txtUpdateFname.Location = New System.Drawing.Point(107, 59)
-        Me.txtUpdateFname.Name = "txtUpdateFname"
-        Me.txtUpdateFname.Size = New System.Drawing.Size(192, 20)
-        Me.txtUpdateFname.TabIndex = 8
-        '
-        'txtUpdateMname
-        '
-        Me.txtUpdateMname.Location = New System.Drawing.Point(107, 85)
-        Me.txtUpdateMname.Name = "txtUpdateMname"
-        Me.txtUpdateMname.Size = New System.Drawing.Size(192, 20)
-        Me.txtUpdateMname.TabIndex = 9
-        '
-        'txtUpdateLname
-        '
-        Me.txtUpdateLname.Location = New System.Drawing.Point(107, 111)
-        Me.txtUpdateLname.Name = "txtUpdateLname"
-        Me.txtUpdateLname.Size = New System.Drawing.Size(192, 20)
-        Me.txtUpdateLname.TabIndex = 10
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(43, 59)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(58, 13)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "First name:"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(3, 85)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(98, 13)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Middle name/initial:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(42, 111)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 13)
-        Me.Label4.TabIndex = 13
-        Me.Label4.Text = "Last name:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(40, 34)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(61, 13)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "ID Number:"
-        '
-        'txtUpdateId
-        '
-        Me.txtUpdateId.Enabled = False
-        Me.txtUpdateId.Location = New System.Drawing.Point(107, 31)
-        Me.txtUpdateId.Name = "txtUpdateId"
-        Me.txtUpdateId.Size = New System.Drawing.Size(67, 20)
-        Me.txtUpdateId.TabIndex = 15
+        Me.btnDelete.Location = New System.Drawing.Point(207, 137)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(92, 23)
+        Me.btnDelete.TabIndex = 20
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
         '
         'btnUpdate
         '
@@ -154,17 +99,74 @@ Partial Class Form1
         Me.btnUpdate.Text = "Update"
         Me.btnUpdate.UseVisualStyleBackColor = True
         '
-        'btnDelete
+        'txtUpdateId
         '
-        Me.btnDelete.Location = New System.Drawing.Point(207, 137)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(92, 23)
-        Me.btnDelete.TabIndex = 20
-        Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.txtUpdateId.Enabled = False
+        Me.txtUpdateId.Location = New System.Drawing.Point(107, 31)
+        Me.txtUpdateId.Name = "txtUpdateId"
+        Me.txtUpdateId.Size = New System.Drawing.Size(67, 20)
+        Me.txtUpdateId.TabIndex = 15
+        '
+        'txtUpdateLname
+        '
+        Me.txtUpdateLname.Location = New System.Drawing.Point(107, 111)
+        Me.txtUpdateLname.Name = "txtUpdateLname"
+        Me.txtUpdateLname.Size = New System.Drawing.Size(192, 20)
+        Me.txtUpdateLname.TabIndex = 10
+        '
+        'txtUpdateMname
+        '
+        Me.txtUpdateMname.Location = New System.Drawing.Point(107, 85)
+        Me.txtUpdateMname.Name = "txtUpdateMname"
+        Me.txtUpdateMname.Size = New System.Drawing.Size(192, 20)
+        Me.txtUpdateMname.TabIndex = 9
+        '
+        'txtUpdateFname
+        '
+        Me.txtUpdateFname.Location = New System.Drawing.Point(107, 59)
+        Me.txtUpdateFname.Name = "txtUpdateFname"
+        Me.txtUpdateFname.Size = New System.Drawing.Size(192, 20)
+        Me.txtUpdateFname.TabIndex = 8
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(40, 34)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(61, 13)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "ID Number:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(42, 111)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(59, 13)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "Last name:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(3, 85)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(98, 13)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "Middle name/initial:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(43, 59)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(58, 13)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "First name:"
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.ComboBox1)
         Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
@@ -180,44 +182,14 @@ Partial Class Form1
         Me.TabPage1.Text = "Add new Person"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'btnAdd
+        'Label3
         '
-        Me.btnAdd.Location = New System.Drawing.Point(119, 105)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(108, 50)
-        Me.btnAdd.TabIndex = 1
-        Me.btnAdd.Text = "Add and Update Datagrid"
-        Me.btnAdd.UseVisualStyleBackColor = True
-        '
-        'txtAddFname
-        '
-        Me.txtAddFname.Location = New System.Drawing.Point(119, 27)
-        Me.txtAddFname.Name = "txtAddFname"
-        Me.txtAddFname.Size = New System.Drawing.Size(192, 20)
-        Me.txtAddFname.TabIndex = 2
-        '
-        'txtAddMname
-        '
-        Me.txtAddMname.Location = New System.Drawing.Point(119, 53)
-        Me.txtAddMname.Name = "txtAddMname"
-        Me.txtAddMname.Size = New System.Drawing.Size(192, 20)
-        Me.txtAddMname.TabIndex = 3
-        '
-        'txtAddLname
-        '
-        Me.txtAddLname.Location = New System.Drawing.Point(119, 79)
-        Me.txtAddLname.Name = "txtAddLname"
-        Me.txtAddLname.Size = New System.Drawing.Size(192, 20)
-        Me.txtAddLname.TabIndex = 4
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(55, 27)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "First name:"
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(54, 79)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(59, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Last name:"
         '
         'Label2
         '
@@ -228,14 +200,44 @@ Partial Class Form1
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Middle name/initial:"
         '
-        'Label3
+        'Label1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(54, 79)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 13)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Last name:"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(55, 27)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "First name:"
+        '
+        'txtAddLname
+        '
+        Me.txtAddLname.Location = New System.Drawing.Point(119, 79)
+        Me.txtAddLname.Name = "txtAddLname"
+        Me.txtAddLname.Size = New System.Drawing.Size(192, 20)
+        Me.txtAddLname.TabIndex = 4
+        '
+        'txtAddMname
+        '
+        Me.txtAddMname.Location = New System.Drawing.Point(119, 53)
+        Me.txtAddMname.Name = "txtAddMname"
+        Me.txtAddMname.Size = New System.Drawing.Size(192, 20)
+        Me.txtAddMname.TabIndex = 3
+        '
+        'txtAddFname
+        '
+        Me.txtAddFname.Location = New System.Drawing.Point(119, 27)
+        Me.txtAddFname.Name = "txtAddFname"
+        Me.txtAddFname.Size = New System.Drawing.Size(192, 20)
+        Me.txtAddFname.TabIndex = 2
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Location = New System.Drawing.Point(119, 105)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(108, 50)
+        Me.btnAdd.TabIndex = 1
+        Me.btnAdd.Text = "Add and Update Datagrid"
+        Me.btnAdd.UseVisualStyleBackColor = True
         '
         'TabControl1
         '
@@ -248,6 +250,14 @@ Partial Class Form1
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(942, 274)
         Me.TabControl1.TabIndex = 2
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(488, 62)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 8
         '
         'Form1
         '
@@ -288,4 +298,5 @@ Partial Class Form1
     Friend WithEvents txtAddFname As System.Windows.Forms.TextBox
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class

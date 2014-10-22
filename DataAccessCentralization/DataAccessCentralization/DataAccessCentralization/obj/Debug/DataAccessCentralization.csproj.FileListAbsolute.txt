@@ -16,3 +16,8 @@ C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\Da
 C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.pdb
 C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.dll
 C:\Users\Sonny\Dropbox\Projects\Data Access Layer Centralization\Source codes\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.pdb
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.dll
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.pdb
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.csprojResolveAssemblyReference.cache
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.dll
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.pdb

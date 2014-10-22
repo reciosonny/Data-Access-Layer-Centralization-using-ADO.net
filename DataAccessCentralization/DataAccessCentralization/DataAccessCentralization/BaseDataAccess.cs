@@ -24,7 +24,8 @@ namespace DataAccessCentralization
         private DataSet ds { get; set; }
         //private DataTable dt { get; set; }
         private IDbDataAdapter da { get; set; }
-
+        private IDataReader dr { get; set; }
+        
         /// <summary>
         /// use this to check if your SQL query has rows.
         /// </summary>
@@ -117,7 +118,7 @@ namespace DataAccessCentralization
                 }
             }
         }
-
+        
         /// <summary>
         /// provides a straightforward query execution IF you provided a SQL query during InitializeDataAccess() method. Returns number of rows affected.
         /// </summary>
@@ -199,6 +200,76 @@ namespace DataAccessCentralization
                     cmd.Dispose();
                 }
             }
+        }
+
+        /// <summary>
+        /// support for datareader stored into collections(List<of T>)
+        /// </summary>
+        /// <param name="parameterName"></param>
+        /// <returns></returns>
+        public List<object> getDataReader(string parameterName)
+        {
+            var list = new List<object>();
+            using (conn)
+            {
+                try
+                {
+                    conn.Open();
+                    dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        list.Add(dr[parameterName]);
+                    }
+                }
+                catch (Exception err)
+                {
+                    throw new Exception(err.Message);
+                }
+                finally
+                {
+                    conn.Close();
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+            return list;
+        }
+
+        /// <summary>
+        /// support for datareader stored into collections(List<of T>). Requires query if you didn't provided a query during initialization.
+        /// </summary>
+        /// <param name="parameterName"></param>
+        /// <returns></returns>
+        public List<object> getDataReader(string parameterName, string query)
+        {
+            var list = new List<object>();
+            cmd.CommandText = query;
+            using (conn)
+            {
+                try
+                {
+                    conn.Open();
+                    dr = cmd.ExecuteReader();
+                    if (dr.Read()==true)
+                    {
+                        while (dr.Read())
+                        {
+                            list.Add(dr[parameterName]);
+                        }
+                    }
+                }
+                catch (Exception err)
+                {
+                    throw new Exception(err.Message);
+                }
+                finally
+                {
+                    conn.Close();
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+            return list;
         }
 
 

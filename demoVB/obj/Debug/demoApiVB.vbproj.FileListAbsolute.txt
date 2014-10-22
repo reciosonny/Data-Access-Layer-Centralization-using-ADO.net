@@ -11,3 +11,17 @@ E:\User Libraries\Documents\GitHub\Data-Access-Layer-Centralization-using-ADO.ne
 E:\User Libraries\Documents\GitHub\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.Form1.resources
 E:\User Libraries\Documents\GitHub\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.Resources.resources
 E:\User Libraries\Documents\GitHub\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoApiVB.vbproj.GenerateResource.Cache
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\demoVB.exe.config
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.exe
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.xml
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.pdb
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\person.accdb
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\demoVB.exe
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\demoVB.pdb
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\demoVB.xml
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\DataAccessCentralization.dll
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoApiVB.vbprojResolveAssemblyReference.cache
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.Form1.resources
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.Resources.resources
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoApiVB.vbproj.GenerateResource.Cache
+C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\DataAccessCentralization.pdb
