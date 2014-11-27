@@ -28,14 +28,17 @@ namespace DataAccessCentralization
                 case ProviderType.Oledb:
                     conn = new OleDbConnection(ConnectionString);
                     cmd = new OleDbCommand(Query, (OleDbConnection)conn);
+                    da = new OleDbDataAdapter();
                     break;
                 case ProviderType.Odbc:
                     conn = new OdbcConnection(ConnectionString);
                     cmd = new OdbcCommand(Query, (OdbcConnection)conn);
+                    da = new OdbcDataAdapter();
                     break;
                 case ProviderType.SqlClient:
                     conn = new SqlConnection(ConnectionString);
                     cmd = new SqlCommand(Query, (SqlConnection)conn);
+                    da = new SqlDataAdapter();
                     break;
                 //case ProviderType.OracleClient:
                 //    conn = new OracleConnection(ConnectionString);

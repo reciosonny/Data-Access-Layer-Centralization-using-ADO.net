@@ -16,13 +16,12 @@ namespace DataAccessCentralization
         Odbc,
         SqlClient
     }
-    
+
     public partial class BaseDataAccess
     {
         private IDbConnection conn { get; set; }
         private IDbCommand cmd { get; set; }
         private DataSet ds { get; set; }
-        //private DataTable dt { get; set; }
         private IDbDataAdapter da { get; set; }
         private IDataReader dr { get; set; }
         
@@ -59,6 +58,49 @@ namespace DataAccessCentralization
         }
 
         /// <summary>
+        /// Creating command parameters explicitly, allowing you to specify its parameterdirection and fieldsize if you are using stored procedures..
+        /// </summary>
+        /// <param name="parameterName"></param>
+        /// <param name="value"></param>
+        /// <param name="parameterDirection"></param>
+        /// <param name="fieldSize"></param>
+        protected void CreateCommandParametersExplicit(string parameterName, object value, System.Data.ParameterDirection parameterDirection, int fieldSize)
+        {
+            IDbDataParameter parameterInputOutput;
+            switch (chosenType)
+            {
+                case ProviderType.Oledb:
+                    parameterInputOutput = new OleDbParameter
+                    {
+                        ParameterName = string.Format("@{0}", parameterName),
+                        Direction = parameterDirection,
+                        Size = fieldSize
+                    };
+                    cmd.Parameters.Add(parameterInputOutput);
+                    break;
+                case ProviderType.Odbc:
+                    parameterInputOutput = new OdbcParameter
+                    {
+                        ParameterName = string.Format("@{0}", parameterName),
+                        Direction = parameterDirection,
+                        Size = fieldSize
+                    };
+                    cmd.Parameters.Add(parameterInputOutput);
+                    break;
+                case ProviderType.SqlClient:
+                    parameterInputOutput = new SqlParameter
+                    {
+                        ParameterName = string.Format("@{0}", parameterName),
+                        //SqlDbType = dbType,
+                        Direction = parameterDirection,
+                        Size = fieldSize
+                    };
+                    cmd.Parameters.Add(parameterInputOutput);
+                    break;
+            }
+        }
+
+        /// <summary>
         /// Initializes Data Access before you can set perform CRUD Operations
         /// </summary>
         /// <param name="type"></param>
@@ -66,13 +108,9 @@ namespace DataAccessCentralization
         /// <param name="Query"></param>
         public void InitializeDataAccess(ProviderType type, string ConnectionString, string Query)
         {
-            //conn = new OleDbConnection(ConnectionString);
-            //cmd = new OleDbCommand(Query,(OleDbConnection)conn);
             castProvider(type, ConnectionString,Query);
             chosenType = type;
             ds = new DataSet();
-            da = new OleDbDataAdapter();
-            //dt = new DataTable();
         }
 
         /// <summary>
@@ -82,13 +120,9 @@ namespace DataAccessCentralization
         /// <param name="ConnectionString"></param>
         public void InitializeDataAccess(ProviderType type, string ConnectionString)
         {
-            //conn = new OleDbConnection(ConnectionString);
-            //cmd = new OleDbCommand(null, (OleDbConnection)conn);
             castProvider(type, ConnectionString);
             chosenType = type;
             ds = new DataSet();
-            da = new OleDbDataAdapter();
-            //dt = new DataTable();
         }
 
         /// <summary>
@@ -126,7 +160,6 @@ namespace DataAccessCentralization
         public int SaveChanges(CommandType cmdType = CommandType.Text)
         {
             cmd.CommandType = cmdType;
-            //cmd.CommandText = Query;
             using (conn)
             {
                 try
@@ -175,7 +208,7 @@ namespace DataAccessCentralization
         }
 
         /// <summary>
-        /// Returns first row of the first column value within the resultset. Other values w/in the table are ignored. This is only useful if you are using a SQL functions that returns single column like SUM(), COUNT(), MIN(), MAX()
+        /// Returns first row of the first column value within the resultset. Other values w/in the table are ignored. This is only useful if you are using a SQL functions or aggregate functions that returns single column like SUM(), COUNT(), MIN(), MAX()
         /// </summary>
         /// <returns></returns>
         public object GetFirstValueInFirstRow(string ScalarQuery, CommandType cmdType = CommandType.Text)
