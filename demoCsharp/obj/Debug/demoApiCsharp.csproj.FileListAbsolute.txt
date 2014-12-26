@@ -14,3 +14,13 @@ D:\PROGRAMMERS_resource\SOURCE_CODES\visual studio\2013 version\projects\ApiSamp
 C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\test.exe.config
 C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\test.exe
 C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\test.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\test.exe.config
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\test.exe
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\test.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\person.accdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\test.exe
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\test.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\DataAccessCentralization.dll
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\test.Form1.resources
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\demoApiCsharp.csproj.GenerateResource.Cache
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\demoApiCsharp.csprojResolveAssemblyReference.cache

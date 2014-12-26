@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
@@ -24,7 +27,7 @@ namespace DataAccessCentralization
         private DataSet ds { get; set; }
         private IDbDataAdapter da { get; set; }
         private IDataReader dr { get; set; }
-        
+
         /// <summary>
         /// use this to check if your SQL query has rows.
         /// </summary>
@@ -34,7 +37,6 @@ namespace DataAccessCentralization
         /// passes the chosen type during initialization so that a developer doesn't need to specify a provider type again in each methods.
         /// </summary>
         private ProviderType chosenType { get; set; }
-
 
         /// <summary>
         /// use this if you intend to create a parameter-based command for query use. This method is similar to cmd.Parameters.AddWithValue()
@@ -57,6 +59,47 @@ namespace DataAccessCentralization
             }
         }
 
+        public string GetCmdParametersForInsertInto()
+        {
+            string generatedParameters = null;
+            var isInitialized = false;
+            foreach (IDbDataParameter param in cmd.Parameters)
+            {
+                if (isInitialized == false)
+                {
+                    generatedParameters += param.ParameterName.Cast<string>();
+                    isInitialized = true;
+                }
+                else
+                {
+                    generatedParameters += string.Format(",{0}", param.ParameterName);
+                }
+            }
+            return generatedParameters;
+        }
+
+        public string GetCmdParametersForUpdate(List<string> updateColumnNames)
+        {
+            string generatedParameters = null;
+            var isInitialized = false;
+            int loopNumber = 0;
+            if (updateColumnNames.Count != cmd.Parameters.Count)
+            {
+                throw new Exception("Your parameters and column name count were not exact. Please make sure that they're equal and try again.");
+            }
+            foreach (var item in updateColumnNames)
+            {
+                if (isInitialized == false)
+                {
+                    generatedParameters += string.Format("{0}={1}", item, cmd.Parameters[loopNumber]);
+                    isInitialized = true;
+                }
+                else
+                    generatedParameters += string.Format(",{0}={1}", item, cmd.Parameters[loopNumber]);
+            }
+            return generatedParameters;
+        }
+
         /// <summary>
         /// Creating command parameters explicitly, allowing you to specify its parameterdirection and fieldsize if you are using stored procedures..
         /// </summary>
@@ -66,7 +109,7 @@ namespace DataAccessCentralization
         /// <param name="fieldSize"></param>
         protected void CreateCommandParametersExplicit(string parameterName, object value, System.Data.ParameterDirection parameterDirection, int fieldSize)
         {
-            IDbDataParameter parameterInputOutput;
+            IDbDataParameter parameterInputOutput = null;
             switch (chosenType)
             {
                 case ProviderType.Oledb:
@@ -76,7 +119,7 @@ namespace DataAccessCentralization
                         Direction = parameterDirection,
                         Size = fieldSize
                     };
-                    cmd.Parameters.Add(parameterInputOutput);
+                    //cmd.Parameters.Add(parameterInputOutput);
                     break;
                 case ProviderType.Odbc:
                     parameterInputOutput = new OdbcParameter
@@ -85,7 +128,7 @@ namespace DataAccessCentralization
                         Direction = parameterDirection,
                         Size = fieldSize
                     };
-                    cmd.Parameters.Add(parameterInputOutput);
+                    //cmd.Parameters.Add(parameterInputOutput);
                     break;
                 case ProviderType.SqlClient:
                     parameterInputOutput = new SqlParameter
@@ -95,9 +138,10 @@ namespace DataAccessCentralization
                         Direction = parameterDirection,
                         Size = fieldSize
                     };
-                    cmd.Parameters.Add(parameterInputOutput);
+                    //cmd.Parameters.Add(parameterInputOutput);
                     break;
             }
+            cmd.Parameters.Add(parameterInputOutput);
         }
 
         /// <summary>
@@ -160,6 +204,59 @@ namespace DataAccessCentralization
         public int SaveChanges(CommandType cmdType = CommandType.Text)
         {
             cmd.CommandType = cmdType;
+            using (conn)
+            {
+                try
+                {
+                    conn.Open();
+                    return cmd.ExecuteNonQuery();
+                }
+                catch (Exception err)
+                {
+                    throw new Exception(err.Message);
+                }
+                finally
+                {
+                    conn.Close();
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// provides a straightforward query execution. You need to provide an SQL query for this. Returns number of rows affected.
+        /// </summary>
+        /// <returns>int</returns>
+        public int SaveChanges(string Query)
+        {
+            cmd.CommandText = Query;
+            using (conn)
+            {
+                try
+                {
+                    conn.Open();
+                    return cmd.ExecuteNonQuery();
+                }
+                catch (Exception err)
+                {
+                    throw new Exception(err.Message);
+                }
+                finally
+                {
+                    conn.Close();
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+        }
+
+        /// <summary>
+        /// provides a straightforward query execution. You need to provide an SQL query and CommandType(optional if not Stored Procedure) for this. Returns number of rows affected.
+        /// </summary>
+        /// <returns>int</returns>
+        public int SaveChanges()
+        {
             using (conn)
             {
                 try

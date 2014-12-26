@@ -21,3 +21,8 @@ C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\Data
 C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.csprojResolveAssemblyReference.cache
 C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.dll
 C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.dll
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\bin\Debug\DataAccessCentralization.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.dll
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\DataAccessCentralization\DataAccessCentralization\DataAccessCentralization\obj\Debug\DataAccessCentralization.csprojResolveAssemblyReference.cache

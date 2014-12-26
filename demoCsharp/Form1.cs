@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataAccessCentralization;
+using test.BLL;
+
 namespace test
 {
     public partial class Form1 : Form
@@ -22,6 +24,9 @@ namespace test
         {
             d.InitializeDataAccess(ProviderType.Oledb,"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=person.accdb;Persist Security Info=True", "Select * from person");
             dataGridView1.DataSource = d.getDataTable("select * from person");
+            
+            var p = new PersonBLL();
+            MessageBox.Show(""+p.GetLastName(),"MESSAGE");
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -45,10 +50,13 @@ namespace test
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            d.InitializeDataAccess(ProviderType.Oledb,
-                "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=person.accdb;Persist Security Info=True");
-            DeclarePersonParametersForAdd(txtAddFname.Text, txtAddMname.Text, txtAddLname.Text);
-            d.SaveChanges("insert into person(fname,mname,lname) values(@fname,@mname,@lname)");
+            //d.InitializeDataAccess(ProviderType.Oledb,
+            //    "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=person.accdb;Persist Security Info=True");
+            //DeclarePersonParametersForAdd(txtAddFname.Text, txtAddMname.Text, txtAddLname.Text);
+            //d.SaveChanges("insert into person(fname,mname,lname) values(@fname,@mname,@lname)");
+
+            var p = new PersonBLL();
+            p.Add(txtAddFname.Text, txtAddMname.Text, txtAddLname.Text);
             getData();
         }
 

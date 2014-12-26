@@ -2,3 +2,4 @@
 .manifest
 .cache
 .pdb
+*.stackdump

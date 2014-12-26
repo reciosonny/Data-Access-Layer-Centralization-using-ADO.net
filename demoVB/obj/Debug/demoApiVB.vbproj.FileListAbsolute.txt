@@ -25,3 +25,17 @@ C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demo
 C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.Resources.resources
 C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoApiVB.vbproj.GenerateResource.Cache
 C:\Users\recio_000\Documents\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\DataAccessCentralization.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\demoVB.exe.config
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.exe
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.xml
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\person.accdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\demoVB.exe
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\demoVB.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\demoVB.xml
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\DataAccessCentralization.dll
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\bin\Debug\DataAccessCentralization.pdb
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoApiVB.vbprojResolveAssemblyReference.cache
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.Form1.resources
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoVB.Resources.resources
+E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoVB\obj\Debug\demoApiVB.vbproj.GenerateResource.Cache
