@@ -34,6 +34,11 @@ namespace DataAccessCentralization
         public bool HasRows { get; private set; }
 
         /// <summary>
+        /// Provides the Global ConnectionString across functions for a centralized connection.
+        /// </summary>
+        public string GlobalConnectionString { get; set; }
+
+        /// <summary>
         /// passes the chosen type during initialization so that a developer doesn't need to specify a provider type again in each methods.
         /// </summary>
         private ProviderType chosenType { get; set; }
@@ -152,7 +157,7 @@ namespace DataAccessCentralization
         /// <param name="Query"></param>
         public void InitializeDataAccess(ProviderType type, string ConnectionString, string Query)
         {
-            castProvider(type, ConnectionString,Query);
+            castProvider(type, ConnectionString, Query);
             chosenType = type;
             ds = new DataSet();
         }
@@ -168,6 +173,32 @@ namespace DataAccessCentralization
             chosenType = type;
             ds = new DataSet();
         }
+
+        /// <summary>
+        /// Initializes Data Access before you can set perform CRUD Operations. Uses GlobalConnectionString variable as the basis for the ConnectionString so that you don't have to set it repeatedly across functions.
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="ConnectionString"></param>
+        /// <param name="Query"></param>
+        public void InitializeDataAccess(ProviderType type, string Query)
+        {
+            castProvider(type, GlobalConnectionString, Query);
+            chosenType = type;
+            ds = new DataSet();
+        }
+
+        /// <summary>
+        /// Initializes Data Access before you can set perform CRUD Operations. Uses GlobalConnectionString variable as the basis for the ConnectionString so that you don't have to set it repeatedly across functions.
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="ConnectionString"></param>
+        public void InitializeDataAccess(ProviderType type)
+        {
+            castProvider(type, GlobalConnectionString);
+            chosenType = type;
+            ds = new DataSet();
+        }
+
 
         /// <summary>
         /// In case you didn't provide a SQL query in InitializeDataAccess() method.
@@ -281,7 +312,7 @@ namespace DataAccessCentralization
         /// Returns first row of the first column value within the resultset. Other values w/in the table are ignored. This is only useful if you are using a SQL functions that returns single column like SUM(), COUNT(), MIN(), MAX()
         /// </summary>
         /// <returns></returns>
-        public object GetFirstValueInFirstRow(CommandType cmdType = CommandType.Text)
+        public object GetScalarValue(CommandType cmdType = CommandType.Text)
         {
             cmd.CommandType = cmdType;
             using (conn)
@@ -308,7 +339,7 @@ namespace DataAccessCentralization
         /// Returns first row of the first column value within the resultset. Other values w/in the table are ignored. This is only useful if you are using a SQL functions or aggregate functions that returns single column like SUM(), COUNT(), MIN(), MAX()
         /// </summary>
         /// <returns></returns>
-        public object GetFirstValueInFirstRow(string ScalarQuery, CommandType cmdType = CommandType.Text)
+        public object GetScalarValue(string ScalarQuery, CommandType cmdType = CommandType.Text)
         {
             cmd.CommandText = ScalarQuery;
             cmd.CommandType = cmdType;
@@ -330,6 +361,31 @@ namespace DataAccessCentralization
                     cmd.Dispose();
                 }
             }
+        }
+
+        /// <summary>
+        /// for getting aggregate functions
+        /// </summary>
+        /// <typeparam name="T">explicit casting</typeparam>
+        /// <param name="cmdType"></param>
+        /// <returns></returns>
+        protected T GetScalarValue<T>(CommandType cmdType)
+        {
+            cmd.CommandType = cmdType;
+            T myValue;
+            try
+            {
+                using (conn)
+                {
+                    conn.Open();
+                    myValue = (T)cmd.ExecuteScalar();
+                }
+            }
+            catch (Exception err)
+            {
+                throw new Exception(err.Message);
+            }
+            return myValue;
         }
 
         /// <summary>
