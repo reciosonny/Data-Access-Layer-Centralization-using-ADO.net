@@ -24,3 +24,13 @@ E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO
 E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\test.Form1.resources
 E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\demoApiCsharp.csproj.GenerateResource.Cache
 E:\User Libraries\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\demoApiCsharp.csprojResolveAssemblyReference.cache
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\test.exe.config
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\test.exe
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\test.pdb
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\person.accdb
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\test.exe
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\test.pdb
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\bin\Debug\DataAccessCentralization.dll
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\demoApiCsharp.csprojResolveAssemblyReference.cache
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\test.Form1.resources
+D:\Users\Sonny\Documents\Bitbucket\Data-Access-Layer-Centralization-using-ADO.net\demoCsharp\obj\Debug\demoApiCsharp.csproj.GenerateResource.Cache

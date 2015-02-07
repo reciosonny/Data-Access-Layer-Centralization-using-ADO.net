@@ -150,6 +150,39 @@ namespace DataAccessCentralization
         }
 
         /// <summary>
+        /// Use this if you want to get the return value from Stored Procedures..
+        /// </summary>
+        /// <param name="parameterName"></param>
+        /// <param name="dbType"></param>
+        /// <param name="parameterDirection"></param>
+        /// <returns></returns>
+        protected IDbDataParameter CreateCommandParametersExplicit(string parameterName, SqlDbType dbType, System.Data.ParameterDirection parameterDirection)
+        {
+            IDbDataParameter outPutParameter = null; //= new SqlParameter();
+            object paramValue = 0;
+            switch (chosenType)
+            {
+                case ProviderType.Oledb:
+                    //cmd.Parameters.Add(new OleDbParameter(string.Format("@{0}", parameterName)));
+                    break;
+                case ProviderType.Odbc:
+                    //cmd.Parameters.Add(new OdbcParameter(string.Format("@{0}", parameterName)));
+                    break;
+                case ProviderType.SqlClient:
+                    outPutParameter = new SqlParameter();
+                    outPutParameter.ParameterName = string.Format("@{0}", parameterName);
+                    ((SqlParameter)outPutParameter).SqlDbType = dbType; //System.Data.SqlDbType.Int;
+                    outPutParameter.Direction = parameterDirection; //System.Data.ParameterDirection.Input;
+                    outPutParameter.Size = 10;
+                    cmd.Parameters.Add(outPutParameter);
+                    //paramValue = ((SqlParameter)cmd.Parameters[string.Format("@{0}", parameterName)]).Value;
+                    //cmd.Parameters.Add(new SqlParameter(string.Format("@{0}", parameterName), value));
+                    break;
+            }
+            return outPutParameter;
+        }
+
+        /// <summary>
         /// Initializes Data Access before you can set perform CRUD Operations
         /// </summary>
         /// <param name="type"></param>
@@ -180,7 +213,7 @@ namespace DataAccessCentralization
         /// <param name="type"></param>
         /// <param name="ConnectionString"></param>
         /// <param name="Query"></param>
-        public void InitializeDataAccess(ProviderType type, string Query)
+        public void InitializeDataAccess(string Query, ProviderType type)
         {
             castProvider(type, GlobalConnectionString, Query);
             chosenType = type;

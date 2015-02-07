@@ -9,13 +9,25 @@ using System.Windows.Forms;
 
 
 
-
 namespace test
 {
+   
     class Program : BaseDataAccess
     {
+        protected void test()
+        {
+            
+        }
         static void Main(string[] args)
         {
+            var test = new Dictionary<string, object>();
+            test.Add("test", 2);
+            test.Add("test2", 12);
+            foreach (KeyValuePair<string, object> item in test)
+            {
+                Console.WriteLine(item.Key+" => "+item.Value);
+            }
+            
             //BaseDataAccess test = new BaseDataAccess();
             //test.InitializeDataAccess(ProviderType.Oledb, "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=person.accdb;Persist Security Info=True", "Select * from person");
             //test.CreateCommandParameters("fname","asdfghjkl");
