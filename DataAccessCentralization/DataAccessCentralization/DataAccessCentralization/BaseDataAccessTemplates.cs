@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 
@@ -15,6 +16,51 @@ namespace DataAccessCentralization
         public BaseDataAccessTemplates(string GlobalConnectionString)
         {
             this.GlobalConnectionString = GlobalConnectionString;
+        }
+
+        /// <summary>
+        /// Executes a series of FoxPro commands in one run. You can use this to re-index the table or add/edit/delete data
+        /// </summary>
+        /// <param name="tableName"></param>
+        /// <param name="ListOfFoxProCommands"></param>
+        public void ExecFoxProCommands(List<String> ListOfFoxProCommands, String filePath)
+        {
+            /*Sample codes for you to use*/
+            //List<String> ListOfFoxProCommands = new List<string>();
+            //ListOfFoxProCommands.Add("use emp exclusive");
+            //ListOfFoxProCommands.Add("index on pcode tag emp ");
+            /*END*/
+
+            //string vfpScript = "";
+            //foreach (var item in ListOfFoxProCommands)
+            //{
+            //    vfpScript += String.Format("{0}\n", item);
+            //}
+
+            ////@"
+            ////create table abc (text1 char(10), text2 char(10))
+            ////
+            ////index on upper(text1+text2) tag dummy";
+            //string strCon = String.Format(@"Provider=vfpoledb;Data Source={0}", filePath);
+            //OleDbConnection conn = new OleDbConnection(strCon);
+            //OleDbCommand cmd = conn.CreateCommand();
+            //conn.Open();
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.CommandText = "ExecScript";
+            //cmd.Parameters.AddWithValue("code", vfpScript);
+            //cmd.ExecuteNonQuery();
+            //conn.Close();
+
+            string vfpScript = "";
+            foreach (var item in ListOfFoxProCommands)
+            {
+                vfpScript += String.Format("{0}\n", item);
+            }
+            this.GlobalConnectionString = String.Format(@"Provider=vfpoledb;Data Source={0}", filePath);
+            InitializeDataAccess("ExecScript", ProviderType.Oledb);
+            CreateCommandParameters("code", vfpScript);
+            //SaveChanges("ExecScript", CommandType.StoredProcedure);
+            SaveChanges(CommandType.StoredProcedure);
         }
 
         /// <summary>
